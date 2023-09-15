@@ -2,7 +2,7 @@
                 <html lang="en">
                     <head>
                         <meta charset="utf-8">
-                        <title>Fontbakery Check Report</title>
+                        <title>FontBakery Check Report</title>
                         <style>
                             
             html {
@@ -59,8 +59,8 @@
                         </style>
                     </head>
                     <body>
-                    <h1>Fontbakery Technical Report</h1>
-<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+                    <h1>FontBakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/fonttools/fontbakery/issues'>https://github.com/fonttools/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
 <h2>Summary</h2>
             <table>
             <tr>
@@ -72,25 +72,41 @@
                 <th>✅ PASS</th>
             </tr>
             <tr>
-                <td>0</td>
-                <td>1</td>
-                <td>7</td>
-                <td>111</td>
-                <td>7</td>
-                <td>101</td>
+                <td>3</td>
+                <td>3</td>
+                <td>8</td>
+                <td>118</td>
+                <td>6</td>
+                <td>112</td>
             </tr>
             <tr>
-                <td>0%</td>
                 <td>1%</td>
-                <td>4%</td>
-                <td>66%</td>
-                <td>4%</td>
-                <td>60%</td>
+                <td>1%</td>
+                <td>3%</td>
+                <td>47%</td>
+                <td>2%</td>
+                <td>45%</td>
             </tr>
             </table>
             
 <p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
-<h2>&lt;Section: Google Fonts&gt; ⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h2>&lt;Section: Google Fonts&gt; 💥💥🔥🔥⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking OS/2 achVendID.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/vendor_id&gt;</div>
+
+<details><summary>💥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:registered_vendor_ids">FontBakeryCondition:registered_vendor_ids</a> had an error: ModuleNotFoundError: No module named 'bs4'</p>
+</span></li></ul></div></details>
+<h3>Show hinting filesize impact.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/hinting_impact&gt;</div>
+
+<details><summary>💥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>The condition <a href="FontBakeryCondition:hinting_stats">FontBakeryCondition:hinting_stats</a> had an error: ModuleNotFoundError: No module named 'dehinter'</p>
+</span></li></ul></div></details>
+<h3>Version number has increased since previous release on Google Fonts?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/version_bump&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 1.0019989013671875 is equal to version on Google Fonts.</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Version number 1.0019989013671875 is equal to version on Google Fonts GitHub repo.</p>
+</span></li></ul></div></details>
 <h3>Are there caret positions declared for every ligature?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/ligature_carets&gt;</div>
 
@@ -110,9 +126,9 @@
 
 - fourchor + threechor
 
-- threechor + threechor.isol 
+- threechor + threechor.isol
 
-- And fourchor.isol + threechor [code: lacks-kern-info]
+- fourchor.isol + threechor [code: lacks-kern-info]
 </code></pre>
 </span></li></ul></div></details>
 <h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
@@ -120,11 +136,16 @@
 
 <details><summary>⚠️ <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font file does not have a 'meta' table. [code: lacks-meta-table]</p>
 </span></li></ul></div></details>
-<h2>&lt;Section: Universal&gt; 🔥⚠️⚠️⏩⏩⏩⏩ℹ️ℹ️</h2>
+<h3>Noto fonts must have an ARTICLE.en_us.html file</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/description/noto_has_article&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; ⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩ℹ️ℹ️</h2>
 <h3>Glyph names are all valid?</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/valid_glyphnames&gt;</div>
 
-<details><summary>⚠️ <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyph names may be too long for some legacy systems which may expect a maximum 31-char length limit:
+<details><summary>⚠️ <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyph names may be too long for some legacy systems which may expect a maximum 31-characters length limit:
 tawchor.left_alephchor.left.cv01.liga and tawchor.middle_alephchor.left.cv01.liga [code: legacy-long-names]</p>
 </span></li></ul></div></details>
 <h3>Check if each glyph has the recommended amount of contours.</h3>
@@ -136,16 +157,20 @@ tawchor.left_alephchor.left.cv01.liga and tawchor.middle_alephchor.left.cv01.lig
 
 - Glyph name: uogonek	Contours detected: 2	Expected: 1
 
-- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
-- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+- Glyph name: uogonek	Contours detected: 2	Expected: 1
 </code></pre>
 <p>[code: contour-count]</p>
 </span></li></ul></div></details>
-<h3>Ensure dotted circle glyph is present and can attach marks.</h3>
-<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/dotted_circle&gt;</div>
+<h3>Check math signs have the same width.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/math_signs_width&gt;</div>
 
-<details><summary>🔥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>No dotted circle glyph presentand font uses a complex shaper [code: missing-dotted-circle-complex]</p>
+<details><summary>⚠️ <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 572 among a set of 6 math glyphs.
+The following math glyphs have a different width, though:</p>
+<p>Width = 322:
+minus
+[code: width-outliers]</p>
 </span></li></ul></div></details>
 <h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️</h2>
 <h3>Are there any misaligned on-curve points?</h3>
@@ -170,9 +195,9 @@ tawchor.left_alephchor.left.cv01.liga and tawchor.middle_alephchor.left.cv01.lig
 
 * question (U+003F): X=222.0,Y=2.0 (should be at baseline 0?)
 
-* question (U+003F): X=134.5,Y=2.0 (should be at baseline 0?) 
+* question (U+003F): X=134.5,Y=2.0 (should be at baseline 0?)
 
-* And 90 more.
+* 90 more.
 </code></pre>
 <p>Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]</p>
 </span></li></ul></div></details>
@@ -198,11 +223,22 @@ tawchor.left_alephchor.left.cv01.liga and tawchor.middle_alephchor.left.cv01.lig
 
 * Q (U+0051) contains a short segment B&lt;&lt;403.5,-9.5&gt;-&lt;397.0,-10.0&gt;-&lt;391.0,-10.0&gt;&gt;
 
-* W (U+0057) contains a short segment B&lt;&lt;468.0,577.5&gt;-&lt;463.0,600.0&gt;-&lt;461.0,609.0&gt;&gt; 
+* W (U+0057) contains a short segment B&lt;&lt;468.0,577.5&gt;-&lt;463.0,600.0&gt;-&lt;461.0,609.0&gt;&gt;
 
-* And 60 more.
+* 60 more.
 </code></pre>
 <p>Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Shaping Checks&gt; 💥🔥⏩⏩⏩</h2>
+<h3>Ensure dotted circle glyph is present and can attach marks.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/dotted_circle&gt;</div>
+
+<details><summary>🔥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>No dotted circle glyph present and font uses a complex shaper [code: missing-dotted-circle-complex]</p>
+</span></li></ul></div></details>
+<h3>Ensure soft_dotted characters lose their dot when combined with marks that replace the dot.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/soft_dotted&gt;</div>
+
+<details><summary>💥 <strong>fonts/NotoSansChorasmian/googlefonts/ttf/NotoSansChorasmian-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>💥 ERROR</span><span class='details_text'><p>Failed with ModuleNotFoundError: No module named 'shaperglot'</p>
 </span></li></ul></div></details>
                     </body>
                 </html>
