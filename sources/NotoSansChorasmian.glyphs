@@ -134,6 +134,11 @@ name = "Use Typo Metrics";
 value = 1;
 },
 {
+name = fsType;
+value = (
+);
+},
+{
 name = vendorID;
 value = GOOG;
 },
@@ -3889,7 +3894,7 @@ width = 289;
 },
 {
 glyphname = "aleph-chor.left.cv01";
-lastChange = "2023-09-22 12:07:53 +0000";
+lastChange = "2023-09-22 12:08:04 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
