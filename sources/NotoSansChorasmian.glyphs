@@ -1,10 +1,10 @@
 {
-.appVersion = "3217";
+.appVersion = "3205";
 DisplayStrings = (
 "/shin-chor",
 "/four-chor.isol",
 "/aleph-chor.middle",
-"/gimel-chor.left"
+"/taw-chor.left/gimel-chor.left/aleph-chor.left.cv01"
 );
 classes = (
 {
@@ -203,6 +203,14 @@ name = init;
 {
 code = "	sub @Isolated by @Final;\012";
 name = fina;
+},
+{
+code = "";
+name = curs;
+},
+{
+code = "# Automatic Code Start";
+name = dist;
 }
 );
 fontMaster = (
@@ -3881,7 +3889,7 @@ width = 289;
 },
 {
 glyphname = "aleph-chor.left.cv01";
-lastChange = "2021-12-26 21:49:50 +0000";
+lastChange = "2023-09-22 12:07:53 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -5198,6 +5206,7 @@ kerning = {
 "@MMK_R_resh-chor" = -40;
 "@MMK_R_waw-chor" = -120;
 "@MMK_R_yodh-chor" = -140;
+"aleph-chor.left.cv01" = -140;
 };
 "@MMK_L_small_aleph-chor" = {
 "@MMK_R_he-chor" = -180;
