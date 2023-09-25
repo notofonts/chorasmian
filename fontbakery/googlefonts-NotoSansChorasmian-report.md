@@ -1,13 +1,8 @@
 ## FontBakery report
 
-fontbakery version: 0.9.1
+fontbakery version: 0.9.2
 
-<details><summary><b>[12] NotoSansChorasmian-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
-
-
-* 🔥 **FAIL** Version number 1.0019989013671875 is equal to version on Google Fonts.
-* 🔥 **FAIL** Version number 1.0019989013671875 is equal to version on Google Fonts GitHub repo.
-</div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+<details><summary><b>[12] NotoSansChorasmian-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
@@ -15,6 +10,34 @@ fontbakery version: 0.9.1
 
 
 * 🔥 **FAIL** No dotted circle glyph present and font uses a complex shaper [code: missing-dotted-circle-complex]
+</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+
+
+* ⚠ **WARN** The following codepoints supported by the font are not covered by
+    any subsets defined in the font's metadata file, and will never
+    be served. You can solve this by either manually adding additional
+    subset declarations to METADATA.pb, or by editing the glyphset
+    definitions.
+
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
+ * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, tifinagh, coptic
+ * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: math, canadian-aboriginal, tai-le, syriac, tifinagh, coptic, malayalam, old-permic
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0312 COMBINING TURNED COMMA ABOVE: not included in any glyphset definition
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: hanunoo, javanese, meetei-mayek, thai, gujarati, hanifi-rohingya, lepcha, avestan, gurmukhi, newa, hatran, psalter-pahlavi, siddham, tagalog, tai-viet, tirhuta, sogdian, tamil, batak, pahawh-hmong, khudawadi, new-tai-lue, buhid, cham, tifinagh, sinhala, chakma, yi, myanmar, tibetan, kharoshthi, khmer, khojki, bengali, dogra, kannada, rejang, tai-tham, tai-le, devanagari, limbu, mongolian, warang-citi, kayah-li, balinese, modi, telugu, grantha, mandaic, oriya, buginese, mahajani, malayalam, takri, brahmi, manichaean, syriac, gunjala-gondi, tagbanwa, kaithi, nko, saurashtra, duployan, sharada, sundanese, thaana, phags-pa, syloti-nagri
+
+Or you can add the above codepoints to one of the subsets supported by the font: `chorasmian`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -95,9 +118,185 @@ minus
 
 	* question (U+003F): X=134.5,Y=2.0 (should be at baseline 0?)
 
-	* 90 more.
+	* G (U+0047): X=537.0,Y=-1.0 (should be at baseline 0?)
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
+	* G (U+0047): X=544.5,Y=713.0 (should be at cap-height 714?)
+
+	* S (U+0053): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* S (U+0053): X=396.0,Y=713.0 (should be at cap-height 714?)
+
+	* e (U+0065): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* s (U+0073): X=123.5,Y=-1.0 (should be at baseline 0?)
+
+	* w (U+0077): X=258.0,Y=1.0 (should be at baseline 0?)
+
+	* w (U+0077): X=158.0,Y=1.0 (should be at baseline 0?)
+
+	* w (U+0077): X=626.0,Y=1.0 (should be at baseline 0?)
+
+	* w (U+0077): X=523.0,Y=1.0 (should be at baseline 0?)
+
+	* y (U+0079): X=217.0,Y=-2.0 (should be at baseline 0?)
+
+	* braceleft (U+007B): X=150.0,Y=1.0 (should be at baseline 0?)
+
+	* Oslash (U+00D8): X=488.5,Y=713.0 (should be at cap-height 714?)
+
+	* germandbls (U+00DF): X=317.0,Y=-1.0 (should be at baseline 0?)
+
+	* aring (U+00E5): X=171.0,Y=712.0 (should be at cap-height 714?)
+
+	* aring (U+00E5): X=391.0,Y=713.0 (should be at cap-height 714?)
+
+	* aring (U+00E5): X=336.0,Y=712.0 (should be at cap-height 714?)
+
+	* aring (U+00E5): X=224.0,Y=712.0 (should be at cap-height 714?)
+
+	* ae (U+00E6): X=710.5,Y=-1.5 (should be at baseline 0?)
+
+	* egrave (U+00E8): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* eacute (U+00E9): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* ecircumflex (U+00EA): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* edieresis (U+00EB): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* yacute (U+00FD): X=217.0,Y=-2.0 (should be at baseline 0?)
+
+	* ydieresis (U+00FF): X=217.0,Y=-2.0 (should be at baseline 0?)
+
+	* emacron (U+0113): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* edotaccent (U+0117): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* ecaron (U+011B): X=408.0,Y=-1.5 (should be at baseline 0?)
+
+	* Gbreve (U+011E): X=537.0,Y=-1.0 (should be at baseline 0?)
+
+	* Gbreve (U+011E): X=544.5,Y=713.0 (should be at cap-height 714?)
+
+	* Gdotaccent (U+0120): X=537.0,Y=-1.0 (should be at baseline 0?)
+
+	* Gdotaccent (U+0120): X=544.5,Y=713.0 (should be at cap-height 714?)
+
+	* uni0122 (U+0122): X=537.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0122 (U+0122): X=544.5,Y=713.0 (should be at cap-height 714?)
+
+	* uni0123 (U+0123): X=279.5,Y=715.5 (should be at cap-height 714?)
+
+	* oe (U+0153): X=791.0,Y=-1.5 (should be at baseline 0?)
+
+	* Sacute (U+015A): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* Sacute (U+015A): X=396.0,Y=713.0 (should be at cap-height 714?)
+
+	* sacute (U+015B): X=123.5,Y=-1.0 (should be at baseline 0?)
+
+	* Scedilla (U+015E): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* Scedilla (U+015E): X=396.0,Y=713.0 (should be at cap-height 714?)
+
+	* scedilla (U+015F): X=123.5,Y=-1.0 (should be at baseline 0?)
+
+	* Scaron (U+0160): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* Scaron (U+0160): X=396.0,Y=713.0 (should be at cap-height 714?)
+
+	* scaron (U+0161): X=123.5,Y=-1.0 (should be at baseline 0?)
+
+	* uring (U+016F): X=199.0,Y=712.0 (should be at cap-height 714?)
+
+	* uring (U+016F): X=419.0,Y=713.0 (should be at cap-height 714?)
+
+	* uring (U+016F): X=364.0,Y=712.0 (should be at cap-height 714?)
+
+	* uring (U+016F): X=252.0,Y=712.0 (should be at cap-height 714?)
+
+	* Uogonek (U+0172): X=447.0,Y=-1.0 (should be at baseline 0?)
+
+	* wcircumflex (U+0175): X=258.0,Y=1.0 (should be at baseline 0?)
+
+	* wcircumflex (U+0175): X=158.0,Y=1.0 (should be at baseline 0?)
+
+	* wcircumflex (U+0175): X=626.0,Y=1.0 (should be at baseline 0?)
+
+	* wcircumflex (U+0175): X=523.0,Y=1.0 (should be at baseline 0?)
+
+	* ycircumflex (U+0177): X=217.0,Y=-2.0 (should be at baseline 0?)
+
+	* uni0218 (U+0218): X=136.0,Y=-1.0 (should be at baseline 0?)
+
+	* uni0218 (U+0218): X=396.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni0219 (U+0219): X=123.5,Y=-1.0 (should be at baseline 0?)
+
+	* ring (U+02DA): X=40.0,Y=712.0 (should be at cap-height 714?)
+
+	* ring (U+02DA): X=260.0,Y=713.0 (should be at cap-height 714?)
+
+	* ring (U+02DA): X=205.0,Y=712.0 (should be at cap-height 714?)
+
+	* ring (U+02DA): X=93.0,Y=712.0 (should be at cap-height 714?)
+
+	* uni030A (U+030A): X=-108.0,Y=712.0 (should be at cap-height 714?)
+
+	* uni030A (U+030A): X=112.0,Y=713.0 (should be at cap-height 714?)
+
+	* uni030A (U+030A): X=57.0,Y=712.0 (should be at cap-height 714?)
+
+	* uni030A (U+030A): X=-55.0,Y=712.0 (should be at cap-height 714?)
+
+	* wgrave (U+1E81): X=258.0,Y=1.0 (should be at baseline 0?)
+
+	* wgrave (U+1E81): X=158.0,Y=1.0 (should be at baseline 0?)
+
+	* wgrave (U+1E81): X=626.0,Y=1.0 (should be at baseline 0?)
+
+	* wgrave (U+1E81): X=523.0,Y=1.0 (should be at baseline 0?)
+
+	* wacute (U+1E83): X=258.0,Y=1.0 (should be at baseline 0?)
+
+	* wacute (U+1E83): X=158.0,Y=1.0 (should be at baseline 0?)
+
+	* wacute (U+1E83): X=626.0,Y=1.0 (should be at baseline 0?)
+
+	* wacute (U+1E83): X=523.0,Y=1.0 (should be at baseline 0?)
+
+	* wdieresis (U+1E85): X=258.0,Y=1.0 (should be at baseline 0?)
+
+	* wdieresis (U+1E85): X=158.0,Y=1.0 (should be at baseline 0?)
+
+	* wdieresis (U+1E85): X=626.0,Y=1.0 (should be at baseline 0?)
+
+	* wdieresis (U+1E85): X=523.0,Y=1.0 (should be at baseline 0?)
+
+	* uni1E9E (U+1E9E): X=326.5,Y=-1.5 (should be at baseline 0?)
+
+	* ygrave (U+1EF3): X=217.0,Y=-2.0 (should be at baseline 0?)
+
+	* ellipsis (U+2026): X=177.5,Y=2.0 (should be at baseline 0?)
+
+	* ellipsis (U+2026): X=90.0,Y=2.0 (should be at baseline 0?)
+
+	* ellipsis (U+2026): X=439.5,Y=2.0 (should be at baseline 0?)
+
+	* ellipsis (U+2026): X=352.0,Y=2.0 (should be at baseline 0?)
+
+	* ellipsis (U+2026): X=700.5,Y=2.0 (should be at baseline 0?)
+
+	* ellipsis (U+2026): X=613.0,Y=2.0 (should be at baseline 0?)
+
+	* Euro (U+20AC): X=474.0,Y=712.0 (should be at cap-height 714?)
+
+	* Euro (U+20AC): X=468.5,Y=-0.5 (should be at baseline 0?)
+
+	* shinchor (U+10FC3): X=417.5,Y=0.5 (should be at baseline 0?)
+
+	* twentychor (U+10FCA): X=471.0,Y=1.5 (should be at baseline 0?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
@@ -123,9 +322,125 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 	* W (U+0057) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
 
-	* 60 more.
+	* a (U+0061) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
 
-Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]
+	* d (U+0064) contains a short segment L<<446.0,72.0>--<442.0,72.0>>
+
+	* m (U+006D) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* n (U+006E) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* p (U+0070) contains a short segment L<<169.0,463.0>--<173.0,463.0>>
+
+	* r (U+0072) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* u (U+0075) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* Ntilde (U+00D1) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Ntilde (U+00D1) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* germandbls (U+00DF) contains a short segment B<<382.0,412.0>-<382.0,399.0>-<388.5,388.0>>
+
+	* agrave (U+00E0) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* aacute (U+00E1) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* acircumflex (U+00E2) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* atilde (U+00E3) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* adieresis (U+00E4) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* aring (U+00E5) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* ntilde (U+00F1) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* ugrave (U+00F9) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* uacute (U+00FA) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* ucircumflex (U+00FB) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* udieresis (U+00FC) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* amacron (U+0101) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* abreve (U+0103) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* aogonek (U+0105) contains a short segment L<<399.0,76.0>--<395.0,76.0>>
+
+	* dcaron (U+010F) contains a short segment L<<446.0,72.0>--<442.0,72.0>>
+
+	* dcroat (U+0111) contains a short segment L<<445.0,72.0>--<441.0,72.0>>
+
+	* Nacute (U+0143) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Nacute (U+0143) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* nacute (U+0144) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* uni0145 (U+0145) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* uni0145 (U+0145) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* uni0146 (U+0146) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* Ncaron (U+0147) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Ncaron (U+0147) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* ncaron (U+0148) contains a short segment L<<169.0,463.0>--<174.0,463.0>>
+
+	* Eng (U+014A) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* Eng (U+014A) contains a short segment L<<582.0,142.0>--<586.0,142.0>>
+
+	* eng (U+014B) contains a short segment L<<170.0,463.0>--<175.0,463.0>>
+
+	* racute (U+0155) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* uni0157 (U+0157) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* rcaron (U+0159) contains a short segment L<<167.0,438.0>--<171.0,438.0>>
+
+	* umacron (U+016B) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* ubreve (U+016D) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* uring (U+016F) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* uhungarumlaut (U+0171) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* Uogonek (U+0172) contains a short segment B<<539.5,-158.5>-<551.0,-156.0>-<559.0,-155.0>>
+
+	* uogonek (U+0173) contains a short segment L<<448.0,71.0>--<444.0,71.0>>
+
+	* Wcircumflex (U+0174) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Wgrave (U+1E80) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Wacute (U+1E82) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Wdieresis (U+1E84) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>>
+
+	* Euro (U+20AC) contains a short segment B<<184.0,390.0>-<183.0,380.0>-<183.0,371.0>>
+
+	* Euro (U+20AC) contains a short segment B<<183.0,371.0>-<183.0,362.0>-<183.0,352.0>>
+
+	* Euro (U+20AC) contains a short segment B<<183.0,352.0>-<183.0,343.0>-<183.0,332.5>>
+
+	* Euro (U+20AC) contains a short segment B<<183.0,332.5>-<183.0,322.0>-<184.0,311.0>>
+
+	* Euro (U+20AC) contains a short segment B<<95.0,311.0>-<94.0,323.0>-<94.0,331.0>>
+
+	* Euro (U+20AC) contains a short segment B<<94.0,331.0>-<94.0,339.0>-<94.0,352.0>>
+
+	* Euro (U+20AC) contains a short segment B<<94.0,352.0>-<94.0,363.0>-<94.5,373.5>>
+
+	* Euro (U+20AC) contains a short segment B<<94.5,373.5>-<95.0,384.0>-<95.0,390.0>>
+
+	* trademark (U+2122) contains a short segment L<<386.0,633.0>--<382.0,633.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -133,16 +448,16 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Ukrainian (Cyrl, 29,273,587 speakers), Igbo (Latn, 27,823,640 speakers), Aghem (Latn, 38,843 speakers), Basaa (Latn, 332,940 speakers), Navajo (Latn, 166,319 speakers), Belarusian (Cyrl, 10,064,517 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Navajo (Latn, 166,319 speakers), Basaa (Latn, 332,940 speakers), Igbo (Latn, 27,823,640 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 3 | 9 | 118 | 7 | 113 | 0 |
+| 0 | 2 | 10 | 117 | 7 | 113 | 0 |
 | 0% | 1% | 4% | 47% | 3% | 45% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
