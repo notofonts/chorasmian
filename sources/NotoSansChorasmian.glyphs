@@ -187,7 +187,7 @@ code = "sub aleph-chor.middle by aleph-chor.middle.cv02;\012";
 name = cv02;
 },
 {
-code = "sub taw-chor.middle resh-chor by taw-chor.middle_resh-chor.liga;\012sub taw-chor.left resh-chor by taw-chor.left_resh-chor.liga;\012sub taw-chor.middle kaph-chor by taw-chor.middle_kaph-chor.liga;\012sub taw-chor.left kaph-chor by taw-chor.left_kaph-chor.liga;\012sub taw-chor.middle aleph-chor.left.cv01 by taw-chor.middle_aleph-chor.left.cv01.liga;\012sub taw-chor.left aleph-chor.left.cv01 by taw-chor.left_aleph-chor.left.cv01.liga;\012sub [four-chor four-chor.isol] [three-chor three-chor.isol] by seven-chor;\012\012sub @Isolated' [@NumbersMedial @NumbersFinal] by @Initial; \012";
+code = "sub taw-chor.middle resh-chor by taw-chor.middle_resh-chor.liga;\012sub taw-chor.left resh-chor by taw-chor.left_resh-chor.liga;\012sub taw-chor.middle kaph-chor by taw-chor.middle_kaph-chor.liga;\012sub taw-chor.left kaph-chor by taw-chor.left_kaph-chor.liga;\012sub taw-chor.middle aleph-chor.left.cv01 by taw-chor.middle_aleph-chor.left.cv01.liga;\012sub taw-chor.left aleph-chor.left.cv01 by taw-chor.left_aleph-chor.left.cv01.liga;\012\012sub @Isolated' [@NumbersMedial @NumbersFinal] by @Initial; \012";
 name = liga;
 },
 {
