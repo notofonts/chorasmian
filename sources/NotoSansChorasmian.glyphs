@@ -1,10 +1,7 @@
 {
-.appVersion = "3205";
+.appVersion = "3225";
 DisplayStrings = (
-"/shin-chor",
-"/four-chor.isol",
-"/aleph-chor.middle",
-"/taw-chor.left/gimel-chor.left/aleph-chor.left.cv01"
+"/taw-chor.left/aleph-chor.cv01/pe-chor.right/aleph-chor.left.cv01/pe-chor/zayin-chor.left/aleph-chor.cv01"
 );
 classes = (
 {
@@ -76,11 +73,11 @@ code = "aleph-chor.left.cv01 aleph-chor.middle.cv01 aleph-chor.middle.cv01\012";
 name = AlephMidpointLeft;
 },
 {
-code = "gimel-chor gimel-chor.left gimel-chor.middle gimel-chor.right daleth-chor daleth-chor.right zayin-chor zayin-chor.left zayin-chor.middle zayin-chor.right resh-chor resh-chor.right nun-chor nun-chor.right nun-chor.middle nun-chor.left yodh-chor yodh-chor.right waw-chor waw-chor.right he-chor he-chor.cv01 he-chor.right he-chor.right.cv01";
+code = "gimel-chor gimel-chor.left gimel-chor.middle gimel-chor.right daleth-chor daleth-chor.right zayin-chor zayin-chor.left zayin-chor.right resh-chor resh-chor.right nun-chor nun-chor.right nun-chor.middle nun-chor.left yodh-chor yodh-chor.right waw-chor waw-chor.right he-chor he-chor.cv01 he-chor.right he-chor.right.cv01 pe-chor.right\012";
 name = ConnectsAlephBaselineLeft;
 },
 {
-code = "gimel-chor gimel-chor.left gimel-chor.left gimel-chor daleth-chor daleth-chor zayin-chor zayin-chor.left zayin-chor.left zayin-chor resh-chor resh-chor nun-chor nun-chor nun-chor nun-chor yodh-chor yodh-chor waw-chor waw-chor he-chor he-chor he-chor he-chor\012";
+code = "gimel-chor gimel-chor.left gimel-chor.left gimel-chor daleth-chor daleth-chor zayin-chor zayin-chor.left zayin-chor resh-chor resh-chor nun-chor nun-chor nun-chor nun-chor yodh-chor yodh-chor waw-chor waw-chor he-chor he-chor he-chor he-chor pe-chor.right\012";
 name = ConnectsAlephMidpointLeft;
 },
 {
@@ -139,20 +136,20 @@ value = (
 );
 },
 {
-name = vendorID;
-value = GOOG;
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
 value = "https://scripts.sil.org/OFL";
 },
 {
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
+},
+{
+name = vendorID;
+value = GOOG;
 }
 );
 date = "2021-12-23 18:22:29 +0000";
@@ -684,7 +681,7 @@ unicode = 10FBE;
 },
 {
 glyphname = "pe-chor";
-lastChange = "2021-12-23 05:36:56 +0000";
+lastChange = "2023-12-01 11:45:42 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -5197,6 +5194,7 @@ kerning = {
 "@MMK_R_zayin-chor" = -100;
 "he-chor.cv01" = -100;
 "he-chor.isol" = -100;
+"pe-chor" = -90;
 };
 "@MMK_L_aleph-chor.middle.cv01" = {
 "@MMK_R_nun-chor" = -110;
