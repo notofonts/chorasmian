@@ -1,7 +1,7 @@
 {
 .appVersion = "3225";
 DisplayStrings = (
-"/taw-chor.left/aleph-chor.cv01/pe-chor.right/aleph-chor.left.cv01/pe-chor/zayin-chor.left/aleph-chor.cv01"
+"/taw-chor.left/aleph-chor.cv01/pe-chor.right/aleph-chor.left.cv01/nun-chor.cv01/aleph-chor.isol/pe-chor/zayin-chor.left/aleph-chor.cv01"
 );
 classes = (
 {
@@ -681,7 +681,7 @@ unicode = 10FBE;
 },
 {
 glyphname = "pe-chor";
-lastChange = "2023-12-01 11:45:42 +0000";
+lastChange = "2023-12-01 11:47:41 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -1298,7 +1298,7 @@ width = 1048;
 },
 {
 glyphname = "aleph-chor.isol";
-lastChange = "2021-12-23 05:36:57 +0000";
+lastChange = "2023-12-01 11:47:49 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -5249,6 +5249,9 @@ kerning = {
 "gimel-chor.isol" = {
 "yodh-chor" = -180;
 "yodh-chor.isol" = -180;
+};
+"nun-chor.cv01" = {
+"aleph-chor.isol" = -490;
 };
 "small_aleph-chor" = {
 "he-chor.isol" = -180;
