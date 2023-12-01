@@ -129,15 +129,15 @@ ul {
             <tr>
                 <td>0</td>
                 <td>5</td>
-                <td>10</td>
+                <td>11</td>
                 <td>119</td>
                 <td>7</td>
-                <td>114</td>
+                <td>113</td>
             </tr>
             <tr>
                 <td>0%</td>
                 <td>3%</td>
-                <td>5%</td>
+                <td>6%</td>
                 <td>63%</td>
                 <td>4%</td>
                 <td>60%</td>
@@ -176,15 +176,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi</li>
+<li>U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh</li>
 <li>U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition</li>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, coptic, cherokee</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic</li>
 <li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, malayalam, tai-le, math, old-permic, canadian-aboriginal, coptic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, syriac, tai-le, canadian-aboriginal, math, old-permic, tifinagh, coptic</li>
 <li>U+030A COMBINING RING ABOVE: try adding syriac</li>
 <li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
 <li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
@@ -192,7 +192,7 @@ definitions.</p>
 <li>U+0326 COMBINING COMMA BELOW: not included in any glyphset definition</li>
 <li>U+0327 COMBINING CEDILLA: not included in any glyphset definition</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
-<li>U+200C ZERO WIDTH NON-JOINER: try adding one of: kayah-li, sundanese, khojki, mongolian, gujarati, brahmi, kaithi, pahawh-hmong, mandaic, tai-le, kannada, oriya, warang-citi, buginese, dogra, tai-viet, malayalam, syloti-nagri, mahajani, kharoshthi, saurashtra, tai-tham, takri, hatran, khudawadi, bengali, tirhuta, rejang, telugu, cham, balinese, khmer, modi, newa, tamil, javanese, siddham, thai, tifinagh, yi, devanagari, gunjala-gondi, new-tai-lue, phags-pa, lepcha, manichaean, buhid, sharada, tibetan, myanmar, avestan, meetei-mayek, psalter-pahlavi, tagbanwa, hanunoo, sogdian, thaana, grantha, syriac, chakma, tagalog, gurmukhi, duployan, hanifi-rohingya, limbu, batak, nko, sinhala</li>
+<li>U+200C ZERO WIDTH NON-JOINER: try adding one of: psalter-pahlavi, tai-le, thaana, duployan, chakma, pahawh-hmong, kayah-li, gurmukhi, hanifi-rohingya, limbu, balinese, new-tai-lue, siddham, sundanese, tai-tham, grantha, tai-viet, yi, telugu, khudawadi, sharada, buhid, lepcha, malayalam, tagbanwa, mahajani, thai, hatran, mandaic, khmer, bengali, gujarati, phags-pa, buginese, cham, brahmi, manichaean, avestan, oriya, sogdian, tagalog, tibetan, gunjala-gondi, devanagari, saurashtra, syloti-nagri, hanunoo, meetei-mayek, modi, mongolian, newa, syriac, dogra, myanmar, khojki, takri, tirhuta, tamil, rejang, batak, kharoshthi, nko, sinhala, kannada, tifinagh, javanese, warang-citi, kaithi</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>chorasmian</code>, <code>latin</code>, <code>latin-ext</code> [code: unreachable-subsetting]</p>
 </span></li></ul></div></details>
@@ -245,13 +245,7 @@ definitions.</p>
 
 - kaphchor + reshchor
 
-- tawchor.middle + alephchor.left.cv01
-
-- fourchor + threechor
-
-- threechor + threechor.isol
-
-- fourchor.isol + threechor [code: lacks-kern-info]
+- tawchor.middle + alephchor.left.cv01 [code: lacks-kern-info]
 </code></pre>
 </span></li></ul></div></details>
 <h3>Ensure fonts have ScriptLangTags declared on the 'meta' table.</h3>
@@ -265,7 +259,7 @@ definitions.</p>
 <details><summary>🔥 NotoSansChorasmian-Regular.ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]</p>
 </span></li></ul></div></details>
 <h2>Section: Universal</h2>
-<span class='section__emoji'>🔥⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️</span>
+<span class='section__emoji'>🔥⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️</span>
 <h3>Check that legacy accents aren't used in composite glyphs. (derived from com.google.fonts/check/legacy_accents)</h3>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/legacy_accents</div>
 
@@ -408,6 +402,14 @@ definitions.</p>
 
 <details><summary>⚠️ NotoSansChorasmian-Regular.ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyph names may be too long for some legacy systems which may expect a maximum 31-characters length limit:
 tawchor.left_alephchor.left.cv01.liga and tawchor.middle_alephchor.left.cv01.liga [code: legacy-long-names]</p>
+</span></li></ul></div></details>
+<h3>Check font contains no unreachable glyphs</h3>
+<div class='check__idlabel'>Check ID: com.google.fonts/check/unreachable_glyphs</div>
+
+<details><summary>⚠️ NotoSansChorasmian-Regular.ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:</p>
+<pre><code>- sevenchor
+</code></pre>
+<p>[code: unreachable-glyphs]</p>
 </span></li></ul></div></details>
 <h3>Check if each glyph has the recommended amount of contours.</h3>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/contour_count</div>
@@ -797,8 +799,8 @@ minus
 
 <details><summary>⚠️ NotoSansChorasmian-Regular.ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌</p>
 <p>The dot of soft dotted characters <em>should</em> disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́</p>
-<p>Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers).</p>
-<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Ejagham (Latn, 120,000 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Navajo (Latn, 166,319 speakers), Ebira (Latn, 2,200,000 speakers), Lugbara (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Gulay (Latn, 250,478 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Avokaya (Latn, 100,000 speakers). [code: soft-dotted]</p>
+<p>Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers).</p>
+<p>Your font does <em>not</em> cover the following languages that require the soft-dotted feature: Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Avokaya (Latn, 100,000 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ejagham (Latn, 120,000 speakers), Gulay (Latn, 250,478 speakers), Mango (Latn, 77,000 speakers), Basaa (Latn, 332,940 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nateni (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers). [code: soft-dotted]</p>
 </span></li></ul></div></details>
                         </main>
                     </body>

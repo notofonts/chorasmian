@@ -34,7 +34,7 @@ fontbakery version: 0.10.4
 | wo_Latn (Wolof) | No variant glyphs were found for Eng |
 
  [code: warning-language-shaping]
-</div></details><br></div></details><details><summary><b>[14] NotoSansChorasmian-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[15] NotoSansChorasmian-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
 
 
 * 🔥 **FAIL** Version number 1.0030059814453125 is equal to version on Google Fonts GitHub repo.
@@ -191,15 +191,15 @@ fontbakery version: 0.10.4
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
+ * U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh
  * U+02C9 MODIFIER LETTER MACRON: not included in any glyphset definition
- * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
- * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
- * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, tifinagh, coptic, cherokee
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic
  * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, malayalam, tai-le, math, old-permic, canadian-aboriginal, coptic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: malayalam, syriac, tai-le, canadian-aboriginal, math, old-permic, tifinagh, coptic
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
  * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
@@ -207,7 +207,7 @@ fontbakery version: 0.10.4
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
- * U+200C ZERO WIDTH NON-JOINER: try adding one of: kayah-li, sundanese, khojki, mongolian, gujarati, brahmi, kaithi, pahawh-hmong, mandaic, tai-le, kannada, oriya, warang-citi, buginese, dogra, tai-viet, malayalam, syloti-nagri, mahajani, kharoshthi, saurashtra, tai-tham, takri, hatran, khudawadi, bengali, tirhuta, rejang, telugu, cham, balinese, khmer, modi, newa, tamil, javanese, siddham, thai, tifinagh, yi, devanagari, gunjala-gondi, new-tai-lue, phags-pa, lepcha, manichaean, buhid, sharada, tibetan, myanmar, avestan, meetei-mayek, psalter-pahlavi, tagbanwa, hanunoo, sogdian, thaana, grantha, syriac, chakma, tagalog, gurmukhi, duployan, hanifi-rohingya, limbu, batak, nko, sinhala
+ * U+200C ZERO WIDTH NON-JOINER: try adding one of: psalter-pahlavi, tai-le, thaana, duployan, chakma, pahawh-hmong, kayah-li, gurmukhi, hanifi-rohingya, limbu, balinese, new-tai-lue, siddham, sundanese, tai-tham, grantha, tai-viet, yi, telugu, khudawadi, sharada, buhid, lepcha, malayalam, tagbanwa, mahajani, thai, hatran, mandaic, khmer, bengali, gujarati, phags-pa, buginese, cham, brahmi, manichaean, avestan, oriya, sogdian, tagalog, tibetan, gunjala-gondi, devanagari, saurashtra, syloti-nagri, hanunoo, meetei-mayek, modi, mongolian, newa, syriac, dogra, myanmar, khojki, takri, tirhuta, tamil, rejang, batak, kharoshthi, nko, sinhala, kannada, tifinagh, javanese, warang-citi, kaithi
 
 Or you can add the above codepoints to one of the subsets supported by the font: `chorasmian`, `latin`, `latin-ext` [code: unreachable-subsetting]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
@@ -225,13 +225,7 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 	- kaphchor + reshchor
 
-	- tawchor.middle + alephchor.left.cv01
-
-	- fourchor + threechor
-
-	- threechor + threechor.isol
-
-	- fourchor.isol + threechor [code: lacks-kern-info]
+	- tawchor.middle + alephchor.left.cv01 [code: lacks-kern-info]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -241,6 +235,13 @@ Or you can add the above codepoints to one of the subsets supported by the font:
 
 * ⚠ **WARN** The following glyph names may be too long for some legacy systems which may expect a maximum 31-characters length limit:
 tawchor.left_alephchor.left.cv01.liga and tawchor.middle_alephchor.left.cv01.liga [code: legacy-long-names]
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+
+	- sevenchor
+ [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
 
@@ -620,17 +621,17 @@ minus
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́
 
-Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Igbo (Latn, 27,823,640 speakers), Ejagham (Latn, 120,000 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Navajo (Latn, 166,319 speakers), Ebira (Latn, 2,200,000 speakers), Lugbara (Latn, 2,200,000 speakers), Basaa (Latn, 332,940 speakers), Gulay (Latn, 250,478 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Ma’di (Latn, 584,000 speakers), Nateni (Latn, 100,000 speakers), Mango (Latn, 77,000 speakers), Avokaya (Latn, 100,000 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Ma’di (Latn, 584,000 speakers), Lugbara (Latn, 2,200,000 speakers), Igbo (Latn, 27,823,640 speakers), Avokaya (Latn, 100,000 speakers), Koonzime (Latn, 40,000 speakers), Sar (Latn, 500,000 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ejagham (Latn, 120,000 speakers), Gulay (Latn, 250,478 speakers), Mango (Latn, 77,000 speakers), Basaa (Latn, 332,940 speakers), Kom (Latn, 360,685 speakers), Dan (Latn, 1,099,244 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Nateni (Latn, 100,000 speakers), Ebira (Latn, 2,200,000 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 5 | 10 | 119 | 7 | 114 | 0 |
-| 0% | 2% | 4% | 47% | 3% | 45% | 0% |
+| 0 | 5 | 11 | 119 | 7 | 113 | 0 |
+| 0% | 2% | 4% | 47% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
