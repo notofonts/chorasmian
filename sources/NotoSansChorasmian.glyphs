@@ -1,7 +1,8 @@
 {
 .appVersion = "3225";
 DisplayStrings = (
-"/taw-chor.left/aleph-chor.cv01/pe-chor.right/aleph-chor.cv01/aleph-chor.cv01.fina/nun-chor.cv01/aleph-chor.isol/pe-chor/zayin-chor.left/aleph-chor.cv01"
+"/taw-chor.left/pe-chor",
+"/pe-chor/taw-chor.left/lamedh-chor.left/taw-chor.middle_pe-chor.liga/taw-chor.left_pe-chor.liga"
 );
 classes = (
 {
@@ -169,7 +170,7 @@ code = "feature calt;\012feature isol;\012feature cv01;\012feature cv02;\012";
 name = aalt;
 },
 {
-code = "#lookup ISOLATED {\012#	ignore sub @Isolated' @AllLetters, @AllLetters @Isolated';\012#	sub @Isolated' by @IsolatedIsolated;\012#} ISOLATED;\012#\012#lookup INITIAL {\012#	ignore sub @AllLetters @Isolated';\012#	sub @Isolated' by @Initial;\012#} INITIAL;\012#\012#lookup FINAL {\012#	ignore sub @Isolated' @AllLetters;\012#	sub @Isolated' by @Final;\012#} FINAL;\012#\012#lookup MEDIAL {\012#	sub @AllLetters @Isolated' @AllLetters by @Medial;\012#} MEDIAL;\012\012#lookup DERIGHT {\012#	sub @RightJoiningRight @RightJoiningRight' by @RightJoiningIsolated;\012#	sub @Isolated @RightJoiningRight' by @RightJoiningIsolated;\012#} DERIGHT;\012#\012#lookup DEMIDDLE {\012#	sub @RightJoiningRight @MiddleMedial' by @MiddleLeft;\012#	sub @Isolated @MiddleMedial' by @MiddleLeft;\012#} DEMIDDLE;\012\012lookup GIMEL {\012	sub gimel-chor.left @ContainsBaselineRight' by @ContainsBaselineRightModified;\012	sub gimel-chor.middle @ContainsBaselineRight' by @ContainsBaselineRightModified;\012} GIMEL;\012\012lookup ALEPHMIDPOINT {\012	ignore sub @AlephBaselineLeft' @AllNun @AllLetters;    \012	sub @AlephBaselineLeft' @ConnectsAlephBaselineLeft by @AlephMidpointLeft;\012	sub aleph-chor.left.cv01 @ConnectsAlephBaselineLeft' by @ConnectsAlephMidpointLeft;\012	sub aleph-chor.middle.cv01 @ConnectsAlephBaselineLeft' by @ConnectsAlephMidpointLeft;\012} ALEPHMIDPOINT;\012\012lookup NOBASELINELEFT {\012	sub @NoBaselineLeft @ContainsBaselineRight' by @ContainsBaselineRightModified;\012} NOBASELINELEFT;\012\012lookup NUMBERSISOLATED {\012	ignore sub @NumbersIsolated' @AllNumbers, @AllNumbers @NumbersIsolated';\012	sub @NumbersIsolated' by @NumbersIsolatedIsolated;\012} NUMBERSISOLATED;\012\012lookup NUMBERSINITIAL {\012	ignore sub @AllNumbers @NumbersIsolated';\012	sub @NumbersIsolated' by @NumbersInitial;\012} NUMBERSINITIAL;\012\012lookup NUMBERSFINAL {\012	ignore sub @NumbersIsolated' @AllNumbers;\012	sub @NumbersIsolated' by @NumbersFinal;\012} NUMBERSFINAL;\012\012lookup NUMBERSMEDIAL {\012	sub @AllNumbers @NumbersIsolated' @AllNumbers by @NumbersMedial;\012} NUMBERSMEDIAL;\012\012lookup ONEHUNDREDJOIN {\012	sub one_hundred-chor' twenty-chor.middle by one_hundred-chor.left;\012} ONEHUNDREDJOIN;\012\012lookup TENJOIN {\012	sub [twenty-chor twenty-chor.isol twenty-chor.left twenty-chor.middle twenty-chor.right one_hundred-chor one_hundred-chor.isol one_hundred-chor.left] ten-chor' by ten-chor.right;\012} TENJOIN;\012";
+code = "#lookup ISOLATED {\012#	ignore sub @Isolated' @AllLetters, @AllLetters @Isolated';\012#	sub @Isolated' by @IsolatedIsolated;\012#} ISOLATED;\012#\012#lookup INITIAL {\012#	ignore sub @AllLetters @Isolated';\012#	sub @Isolated' by @Initial;\012#} INITIAL;\012#\012#lookup FINAL {\012#	ignore sub @Isolated' @AllLetters;\012#	sub @Isolated' by @Final;\012#} FINAL;\012#\012#lookup MEDIAL {\012#	sub @AllLetters @Isolated' @AllLetters by @Medial;\012#} MEDIAL;\012\012#lookup DERIGHT {\012#	sub @RightJoiningRight @RightJoiningRight' by @RightJoiningIsolated;\012#	sub @Isolated @RightJoiningRight' by @RightJoiningIsolated;\012#} DERIGHT;\012#\012#lookup DEMIDDLE {\012#	sub @RightJoiningRight @MiddleMedial' by @MiddleLeft;\012#	sub @Isolated @MiddleMedial' by @MiddleLeft;\012#} DEMIDDLE;\012\012lookup NOLEFTBEFOREALEF {\012  sub @Initial' aleph-chor.cv01 by @Isolated;\012  sub @Medial' aleph-chor.cv01 by @Final;\012} NOLEFTBEFOREALEF;\012\012lookup GIMEL {\012	sub gimel-chor.left @ContainsBaselineRight' by @ContainsBaselineRightModified;\012	sub gimel-chor.middle @ContainsBaselineRight' by @ContainsBaselineRightModified;\012} GIMEL;\012\012lookup ALEPHMIDPOINT {\012	ignore sub @AlephBaselineLeft' @AllNun @AllLetters;    \012	sub @AlephBaselineLeft' @ConnectsAlephBaselineLeft by @AlephMidpointLeft;\012	sub aleph-chor.left.cv01 @ConnectsAlephBaselineLeft' by @ConnectsAlephMidpointLeft;\012	sub aleph-chor.middle.cv01 @ConnectsAlephBaselineLeft' by @ConnectsAlephMidpointLeft;\012} ALEPHMIDPOINT;\012\012lookup NOBASELINELEFT {\012	sub @NoBaselineLeft @ContainsBaselineRight' by @ContainsBaselineRightModified;\012} NOBASELINELEFT;\012\012lookup NUMBERSISOLATED {\012	ignore sub @NumbersIsolated' @AllNumbers, @AllNumbers @NumbersIsolated';\012	sub @NumbersIsolated' by @NumbersIsolatedIsolated;\012} NUMBERSISOLATED;\012\012lookup NUMBERSINITIAL {\012	ignore sub @AllNumbers @NumbersIsolated';\012	sub @NumbersIsolated' by @NumbersInitial;\012} NUMBERSINITIAL;\012\012lookup NUMBERSFINAL {\012	ignore sub @NumbersIsolated' @AllNumbers;\012	sub @NumbersIsolated' by @NumbersFinal;\012} NUMBERSFINAL;\012\012lookup NUMBERSMEDIAL {\012	sub @AllNumbers @NumbersIsolated' @AllNumbers by @NumbersMedial;\012} NUMBERSMEDIAL;\012\012lookup ONEHUNDREDJOIN {\012	sub one_hundred-chor' twenty-chor.middle by one_hundred-chor.left;\012} ONEHUNDREDJOIN;\012\012lookup TENJOIN {\012	sub [twenty-chor twenty-chor.isol twenty-chor.left twenty-chor.middle twenty-chor.right one_hundred-chor one_hundred-chor.isol one_hundred-chor.left] ten-chor' by ten-chor.right;\012} TENJOIN;\012";
 name = rclt;
 },
 {
@@ -187,7 +188,7 @@ code = "sub aleph-chor.middle by aleph-chor.middle.cv02;\012";
 name = cv02;
 },
 {
-code = "sub taw-chor.middle resh-chor by taw-chor.middle_resh-chor.liga;\012sub taw-chor.left resh-chor by taw-chor.left_resh-chor.liga;\012sub taw-chor.middle kaph-chor by taw-chor.middle_kaph-chor.liga;\012sub taw-chor.left kaph-chor by taw-chor.left_kaph-chor.liga;\012sub taw-chor.middle aleph-chor.left.cv01 by taw-chor.middle_aleph-chor.left.cv01.liga;\012sub taw-chor.left aleph-chor.left.cv01 by taw-chor.left_aleph-chor.left.cv01.liga;\012\012sub @Isolated' [@NumbersMedial @NumbersFinal] by @Initial; \012";
+code = "sub taw-chor.middle resh-chor by taw-chor.middle_resh-chor.liga;\012sub taw-chor.left resh-chor by taw-chor.left_resh-chor.liga;\012sub taw-chor.middle kaph-chor by taw-chor.middle_kaph-chor.liga;\012sub taw-chor.left kaph-chor by taw-chor.left_kaph-chor.liga;\012sub taw-chor.middle pe-chor by taw-chor.middle_pe-chor.liga;\012sub taw-chor.left pe-chor by taw-chor.left_pe-chor.liga;\012sub taw-chor.middle aleph-chor.left.cv01 by taw-chor.middle_aleph-chor.left.cv01.liga;\012sub taw-chor.left aleph-chor.left.cv01 by taw-chor.left_aleph-chor.left.cv01.liga;\012\012sub @Isolated' [@NumbersMedial @NumbersFinal] by @Initial; \012";
 name = liga;
 },
 {
@@ -401,9 +402,15 @@ unicode = 10FB3;
 },
 {
 glyphname = "daleth-chor";
-lastChange = "2021-12-26 21:49:50 +0000";
+lastChange = "2023-12-01 12:09:32 +0000";
 layers = (
 {
+anchors = (
+{
+name = entry;
+position = "{515, 472}";
+}
+);
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
 paths = (
 {
@@ -535,7 +542,7 @@ unicode = 10FB7;
 },
 {
 glyphname = "zayin-chor";
-lastChange = "2021-12-26 21:49:50 +0000";
+lastChange = "2023-12-01 12:01:27 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -741,7 +748,7 @@ unicode = 10FBD;
 },
 {
 glyphname = "nun-chor";
-lastChange = "2021-12-26 21:49:50 +0000";
+lastChange = "2023-12-01 12:10:52 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -762,7 +769,7 @@ nodes = (
 );
 }
 );
-width = 290;
+width = 190;
 }
 );
 leftKerningGroup = "nun-chor";
@@ -858,7 +865,7 @@ unicode = 10FC0;
 },
 {
 glyphname = "pe-chor";
-lastChange = "2023-12-01 11:47:41 +0000";
+lastChange = "2023-12-01 12:24:07 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -2187,7 +2194,7 @@ leftKerningGroup = "kaph-chor.left";
 },
 {
 glyphname = "lamedh-chor.left";
-lastChange = "2023-09-15 09:37:32 +0000";
+lastChange = "2023-12-01 12:30:28 +0000";
 layers = (
 {
 anchors = (
@@ -2508,9 +2515,15 @@ width = 502;
 },
 {
 glyphname = "gimel-chor.middle";
-lastChange = "2021-12-26 21:49:50 +0000";
+lastChange = "2023-12-01 12:10:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = exit;
+position = "{2, 469}";
+}
+);
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
 paths = (
 {
@@ -3541,7 +3554,7 @@ rightKerningGroup = "aleph-chor.left.cv01";
 },
 {
 glyphname = "aleph-chor.middle.cv01";
-lastChange = "2021-12-26 21:49:50 +0000";
+lastChange = "2023-12-01 12:01:37 +0000";
 layers = (
 {
 layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
@@ -3549,30 +3562,30 @@ paths = (
 {
 closed = 1;
 nodes = (
-"446 27 OFFCURVE",
-"446 53 OFFCURVE",
-"436 80 CURVE",
-"333 80 OFFCURVE",
-"254 187 OFFCURVE",
-"296 334 CURVE SMOOTH",
-"354 538 LINE",
-"268 560 LINE",
-"238 453 LINE SMOOTH",
-"206 340 OFFCURVE",
-"137 302 OFFCURVE",
-"0 302 CURVE",
-"0 222 LINE",
-"91 222 OFFCURVE",
-"170 242 OFFCURVE",
-"220 295 CURVE",
-"196 291 LINE",
-"187 81 OFFCURVE",
-"310 0 OFFCURVE",
-"436 0 CURVE"
+"354 27 OFFCURVE",
+"354 53 OFFCURVE",
+"344 80 CURVE",
+"241 80 OFFCURVE",
+"162 187 OFFCURVE",
+"204 334 CURVE SMOOTH",
+"262 538 LINE",
+"176 560 LINE",
+"146 453 LINE SMOOTH",
+"114 340 OFFCURVE",
+"45 302 OFFCURVE",
+"-92 302 CURVE",
+"-92 222 LINE",
+"-1 222 OFFCURVE",
+"78 242 OFFCURVE",
+"128 295 CURVE",
+"104 291 LINE",
+"95 81 OFFCURVE",
+"218 0 OFFCURVE",
+"344 0 CURVE"
 );
 }
 );
-width = 436;
+width = 344;
 }
 );
 rightKerningGroup = "aleph-chor.middle.cv01";
@@ -3792,6 +3805,96 @@ leftMetricsKey = "taw-chor.middle";
 rightMetricsKey = "taw-chor.left";
 },
 {
+glyphname = "taw-chor.left_pe-chor.liga";
+lastChange = "2023-12-01 12:25:25 +0000";
+layers = (
+{
+anchors = (
+{
+name = entry;
+position = "{1224, 0}";
+},
+{
+name = exit;
+position = "{340, 0}";
+}
+);
+layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
+paths = (
+{
+closed = 1;
+nodes = (
+"1024 0 OFFCURVE",
+"1164 41 OFFCURVE",
+"1164 266 CURVE SMOOTH",
+"1164 354 OFFCURVE",
+"1144 465 OFFCURVE",
+"1113 550 CURVE",
+"532 550 LINE SMOOTH",
+"443 550 OFFCURVE",
+"378 525 OFFCURVE",
+"340 474 CURVE",
+"379 432 LINE",
+"404 449 OFFCURVE",
+"426 470 OFFCURVE",
+"504 470 CURVE SMOOTH",
+"1040 470 LINE",
+"1061 417 OFFCURVE",
+"1074 346 OFFCURVE",
+"1074 269 CURVE SMOOTH",
+"1074 135 OFFCURVE",
+"1028 80 OFFCURVE",
+"911 80 CURVE SMOOTH",
+"828 80 OFFCURVE",
+"751 108 OFFCURVE",
+"716 173 CURVE",
+"665 96 LINE",
+"723 36 OFFCURVE",
+"803 0 OFFCURVE",
+"910 0 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"675 -10 OFFCURVE",
+"758 102 OFFCURVE",
+"758 258 CURVE SMOOTH",
+"758 487 LINE",
+"668 487 LINE",
+"668 270 LINE SMOOTH",
+"668 128 OFFCURVE",
+"616 70 OFFCURVE",
+"512 70 CURVE SMOOTH",
+"418 70 OFFCURVE",
+"365 114 OFFCURVE",
+"340 159 CURVE",
+"340 59 LINE",
+"373 16 OFFCURVE",
+"436 -10 OFFCURVE",
+"501 -10 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"666 169 OFFCURVE",
+"583 657 OFFCURVE",
+"51 543 CURVE",
+"69 465 LINE",
+"511 559 OFFCURVE",
+"536 195 OFFCURVE",
+"41 -58 CURVE",
+"81 -130 LINE"
+);
+}
+);
+width = 1224;
+}
+);
+rightKerningGroup = "taw-chor.left";
+},
+{
 glyphname = "taw-chor.left_resh-chor.liga";
 lastChange = "2021-12-23 04:54:44 +0000";
 layers = (
@@ -3988,6 +4091,86 @@ width = 1419;
 }
 );
 leftMetricsKey = "taw-chor.middle";
+},
+{
+glyphname = "taw-chor.middle_pe-chor.liga";
+lastChange = "2023-12-01 12:27:14 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = "pe-chor";
+}
+);
+layerId = "345C3B08-035B-47C3-B4DB-D514201E7D1B";
+paths = (
+{
+closed = 1;
+nodes = (
+"576 -10 OFFCURVE",
+"638 16 OFFCURVE",
+"681 60 CURVE",
+"757 15 OFFCURVE",
+"836 0 OFFCURVE",
+"925 0 CURVE SMOOTH",
+"1215 0 LINE",
+"1225 27 OFFCURVE",
+"1225 53 OFFCURVE",
+"1215 80 CURVE",
+"1109 80 LINE",
+"1133 114 OFFCURVE",
+"1147 166 OFFCURVE",
+"1147 243 CURVE SMOOTH",
+"1147 334 OFFCURVE",
+"1127 474 OFFCURVE",
+"1104 550 CURVE",
+"521 550 LINE SMOOTH",
+"429 550 OFFCURVE",
+"365 521 OFFCURVE",
+"331 474 CURVE",
+"391 450 LINE",
+"418 470 OFFCURVE",
+"418 470 OFFCURVE",
+"495 470 CURVE SMOOTH",
+"659 470 LINE",
+"659 270 LINE SMOOTH",
+"659 128 OFFCURVE",
+"607 70 OFFCURVE",
+"503 70 CURVE SMOOTH",
+"432 70 OFFCURVE",
+"367 95 OFFCURVE",
+"331 159 CURVE",
+"331 59 LINE",
+"365 16 OFFCURVE",
+"426 -10 OFFCURVE",
+"492 -10 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"852 80 OFFCURVE",
+"787 93 OFFCURVE",
+"726 132 CURVE",
+"742 169 OFFCURVE",
+"749 211 OFFCURVE",
+"749 258 CURVE SMOOTH",
+"749 470 LINE",
+"1031 470 LINE",
+"1051 368 OFFCURVE",
+"1057 306 OFFCURVE",
+"1057 252 CURVE SMOOTH",
+"1057 133 OFFCURVE",
+"1028 80 OFFCURVE",
+"907 80 CURVE SMOOTH"
+);
+}
+);
+width = 1215;
+}
+);
+rightMetricsKey = "=taw-chor.middle";
 },
 {
 glyphname = "taw-chor.middle_resh-chor.liga";
@@ -5258,6 +5441,8 @@ kerning = {
 "@MMK_R_resh-chor" = -135;
 "@MMK_R_waw-chor" = -110;
 "@MMK_R_yodh-chor" = -120;
+"lamedh-chor.left" = -180;
+"pe-chor" = -130;
 };
 "@MMK_L_taw-chor.left_aleph-chor.left.cv01.liga" = {
 "@MMK_R_waw-chor" = -100;
