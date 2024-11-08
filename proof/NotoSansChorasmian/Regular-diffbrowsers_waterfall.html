@@ -3,12 +3,11 @@
 <head>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>GFR - Glyphs</title>
+    <title>GFR - Waterfall</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <style type="text/css">
     
-
         html{
 	  font-family: sans-serif;
 	}
@@ -107,11 +106,11 @@
             .header {
             font-weight: bold;
             }
-            .attrib-old{
+            .attr-before{
                 color: red;
                 cursor: text;
             }
-            .attrib-new{
+            .attr-after{
                 color: green;
                 cursor: text;
             }
@@ -141,9 +140,13 @@
 			}
 
 	  
+
+	  
+
+	  
 	    @font-face{
-    src: url(old-NotoSansChorasmian-Regular.ttf);
-    font-family: "old Noto Sans Chorasmian";
+    src: url("NotoSansChorasmian-Regular.ttf");
+    font-family: "Noto Sans Chorasmian";
     font-weight: 400;
     
     font-style: normal;
@@ -151,52 +154,19 @@
 	  
 
 	  
-	    @font-face{
-    src: url(new-NotoSansChorasmian-Regular.ttf);
-    font-family: "new Noto Sans Chorasmian";
-    font-weight: 400;
-    
-    font-style: normal;
-}
-	  
 
 	  
 
 	  
-	    .old-Regular{
-    font-family: "old Noto Sans Chorasmian", "Adobe NotDef";
+	    .Regular{
+    font-family: "Noto Sans Chorasmian", "Adobe NotDef";
     font-weight: 400;
     
     font-style: normal;
     font-variation-settings: "wght" 400;
 }
-	  
-
-	  
-	    .new-Regular{
-    font-family: "new Noto Sans Chorasmian", "Adobe NotDef";
-    font-weight: 400;
-    
-    font-style: normal;
-    font-variation-settings: "wght" 400;
-}
-	  
-
 	  
 	
-.cell{
-  position: relative;
-  z-index: -1;
-  float: left;
-  background-color: #fcfcfc;
-  display: block;
-  text-align: center;
-  padding: 5pt;
-  margin: 5pt;
-  width: 30.0px;
-  line-height: 30.0px;
-}
-
 
 	   #ot-panel {
 		max-height: 400px;
@@ -210,8 +180,6 @@
 <body>
     <div id="nav">
 		
-			<div class="nav-item" id="font-toggle">old</div>
-		
 			<div class="nav-item" id="ot-button">OT features</div>
 			<div id="ot-panel">
 			</div>
@@ -219,81 +187,102 @@
 	</div>
     <div id="content">
 	<h2>
-<b>Text</b>
+<b>Waterfall</b>
 </h2>
 	
   
-      <div class="box">
-	<div class="box-title">old-Regular 20pt</div>
-	  <span class="box-text old-Regular" style="font-size: 20pt">
-	    
-	      <div class="cell"></div>
-	    
-	      <div class="cell"> </div>
-	    
-	      <div class="cell"> </div>
-	    
-	      <div class="cell">‌</div>
-	    
-	      <div class="cell">𐾰</div>
-	    
-	      <div class="cell">𐾱</div>
-	    
-	      <div class="cell">𐾲</div>
-	    
-	      <div class="cell">𐾳</div>
-	    
-	      <div class="cell">𐾴</div>
-	    
-	      <div class="cell">𐾵</div>
-	    
-	      <div class="cell">𐾶</div>
-	    
-	      <div class="cell">𐾷</div>
-	    
-	      <div class="cell">𐾸</div>
-	    
-	      <div class="cell">𐾹</div>
-	    
-	      <div class="cell">𐾺</div>
-	    
-	      <div class="cell">𐾻</div>
-	    
-	      <div class="cell">𐾼</div>
-	    
-	      <div class="cell">𐾽</div>
-	    
-	      <div class="cell">𐾾</div>
-	    
-	      <div class="cell">𐾿</div>
-	    
-	      <div class="cell">𐿀</div>
-	    
-	      <div class="cell">𐿁</div>
-	    
-	      <div class="cell">𐿂</div>
-	    
-	      <div class="cell">𐿃</div>
-	    
-	      <div class="cell">𐿄</div>
-	    
-	      <div class="cell">𐿅</div>
-	    
-	      <div class="cell">𐿆</div>
-	    
-	      <div class="cell">𐿇</div>
-	    
-	      <div class="cell">𐿈</div>
-	    
-	      <div class="cell">𐿉</div>
-	    
-	      <div class="cell">𐿊</div>
-	    
-	      <div class="cell">𐿋</div>
-	    
-          </span>
-       </div>
     
+      <div class="box">
+        <div class="box-title">Regular 7pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 7pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 10pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 10pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 11pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 11pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 12pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 12pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 14pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 14pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 16pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 16pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 18pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 18pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 21pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 21pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 27pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 27pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Regular 32pt</div>
+        <div contenteditable=true spellcheck="false" class="box-text Regular" style="font-size: 32pt">
+            QUICK WAFTING ZEPHYRS VEX BOLD JIM.<br>
+            quick wafting zephyrs vex bold jim.<br>
+            $14.95<br>
+        </div>
+      </div>
+    
+  
 
     </div>
 </body>
